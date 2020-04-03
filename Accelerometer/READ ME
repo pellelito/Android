@@ -1,0 +1,7 @@
+Accelerometer - App gjord för/med en IQ Mobile, som körs Android 4.2
+Appen hämtar och visar till att börja med värden för x, y och z axeln, som konstant ändras när man ändrar telefonens läge.
+Vi har en knapp som når och startar vibratorn i telefonen, den startar också en ny aktivitet som visar en bild.
+Bilden visas hela tiden horisontelt och rotar i takt med att du rör telefonen.
+Skaka telefonen för att få bilden att försvinna, skaka den igen för att få bilden tillbaka, den visar också ett kort meddelande på att telefonen skakades.
+Har också lagt till en "back-arrow" för att enkelt kunna navigera tillbaka till startmenyn ifrån den andra aktiviteten
+//Pellelito
