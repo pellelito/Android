@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Uppgift 2</string>
+    <string-array name="items">
+        <item>peach</item>
+        <item>tomato</item>
+        <item>squash</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>¢0.99</item>
+        <item>¢1.49</item>
+        <item>¢0.89</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Fresh peaches from Georgia</item>
+        <item>Fresh tomatos from Ohio</item>
+        <item>Fresh squash from Califonia</item>
+    </string-array>
+
+</resources>
