@@ -17,7 +17,8 @@
         app:layout_constraintBottom_toTopOf="@+id/taskListView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/button_layout"/>
 
     <Button
         android:id="@+id/addBtn"
@@ -28,7 +29,8 @@
         app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
         app:layout_constraintHorizontal_bias="0.389"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/button_layout"/>
 
     <ListView
         android:id="@+id/taskListView"

@@ -33,7 +33,7 @@ public class ItemAdaptor extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) { // filling up the list
 
         View v = inflator.inflate(R.layout.my_listview_layout, null);
 
@@ -43,7 +43,7 @@ public class ItemAdaptor extends BaseAdapter {
         itemTextView.setText(taskList.getItemName(position));
         descriptionTextView.setText(taskList.getItemDescription(position));
 
-        if (taskList.isChecked(position)) {
+        if (taskList.isChecked(position)) { //highlight when presseed
             v.setBackgroundColor(parent.getResources().getColor(R.color.highlight));
         } else {
             v.setBackgroundColor(parent.getResources().getColor(R.color.not_highlight));
