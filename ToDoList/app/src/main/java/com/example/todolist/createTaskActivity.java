@@ -6,18 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class createTaskActivity extends AppCompatActivity {
-
+    Context context;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_task);
 
-        final Context context = this;
+        context = this;
         Button submitBtn = (Button) findViewById(R.id.submitBtn);
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
@@ -27,13 +27,14 @@ public class createTaskActivity extends AppCompatActivity {
                 EditText itemEditText = (EditText) findViewById(R.id.ItemEditText);
                 EditText descriptionEditText = (EditText) findViewById(R.id.descriptionEditText);
 
-                Toast.makeText(context, getIntent().getStringExtra("com.example.todolist.taskList"), Toast.LENGTH_LONG).show();
+                //Recover TaskList from previous activity
                 TaskList taskList = TaskList.fromString(getIntent().getStringExtra("com.example.todolist.taskList"));
-                if (taskList == null) {
+                if (taskList == null) { //if not found make a new one
                     taskList = new TaskList();
                 }
                 taskList.addTask(new Task(itemEditText.getText().toString(), descriptionEditText.getText().toString()));
 
+                //Send taskList as String
                 addItemIntent.putExtra("com.example.todolist.taskList", taskList.toString());
 
                 startActivity(addItemIntent);
