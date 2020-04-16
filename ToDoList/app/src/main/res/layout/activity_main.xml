@@ -36,6 +36,7 @@
         android:id="@+id/taskListView"
         android:layout_width="370dp"
         android:layout_height="537dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"

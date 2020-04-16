@@ -63,9 +63,7 @@ public class MainActivity extends AppCompatActivity {
         //onStart so it updates when you go back to the activity
         super.onStart();
 
-        Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
-
-        // If sent fron other Activity
+        // If sent from other Activity
         if (getIntent().hasExtra("com.example.todolist.taskList")){
             taskList = TaskList.fromString(getIntent().getStringExtra("com.example.todolist.taskList"));
         // Else check the Internal Storage for a saved file
