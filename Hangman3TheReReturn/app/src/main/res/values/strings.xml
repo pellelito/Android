@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Hangman 3 - The ReReturn</string>
+    <string-array name="words">
+        <item>java</item>
+        <item>boolean</item>
+        <item>integer</item>
+    </string-array>
+</resources>
