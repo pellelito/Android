@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1055837644509",
+    "firebase_url": "https://mullechat099.firebaseio.com",
+    "project_id": "mullechat099",
+    "storage_bucket": "mullechat099.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055837644509:android:b2f3f0a0b3beea3282dd34",
+        "android_client_info": {
+          "package_name": "com.example.mullechat_0_99"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055837644509-g7srpntrlvioctcrfmg9utoi92stphgf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mullechat_0_99",
+            "certificate_hash": "6373321bd4998afab1bce3d0e91e951521a1bf9a"
+          }
+        },
+        {
+          "client_id": "1055837644509-iuokrcljgpssnjelsuvisdpsecirhr3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXpJapsQ1EDS_tCEL4e73je66AKOTFcx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055837644509-iuokrcljgpssnjelsuvisdpsecirhr3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
