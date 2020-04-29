@@ -18,8 +18,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-//import android.widget.EditText;
-
 
 public class Login extends AppCompatActivity {
     TextView registerUser;
@@ -30,9 +28,7 @@ public class Login extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        // updateUI(currentUser);
     }
 
     @Override
@@ -52,6 +48,7 @@ public class Login extends AppCompatActivity {
     }
     public void startRegister(View view){
 
+        // starts register page to create a new account
         Intent intent = new Intent(getApplicationContext(), Register.class);
         startActivity(intent);
         //Log.d("mytag", "Start register");
@@ -63,20 +60,22 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
+
+                            // Sign in success
                             Log.d("mytag", "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                             intent.putExtra("user",user.toString());
                             Log.d("mytag", user.toString());
                             startActivity(intent);
-                            //updateUI(user);
+
                         } else {
-                            // If sign in fails, display a message to the user.
+
+                            // If sign in fails
                             Log.w("mytag  ", "signInWithEmail:failure", task.getException());
                             Toast.makeText(Login.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-                            // updateUI(null);
+
                         }
                     }
                 });

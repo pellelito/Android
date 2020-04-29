@@ -1,10 +1,10 @@
 package com.example.mullechat_0_99;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 
+//Not in use
 public class Users extends AppCompatActivity {
 
 

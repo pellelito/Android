@@ -1,9 +1,5 @@
 package com.example.mullechat_0_99;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -43,6 +42,7 @@ public class Register extends AppCompatActivity {
     }
     public void startLogin(View view){
 
+        //returns to the Login page
         Intent intent = new Intent(getApplicationContext(), Login.class);
         startActivity(intent);
 
@@ -57,19 +57,25 @@ public class Register extends AppCompatActivity {
 
 
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
+
+                            // Sign in success
                             Log.d("mytag", "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            // updateUI(user);
+
+                            //returns to the Login page
+                            Intent intent = new Intent(getApplicationContext(), Login.class);
+                            startActivity(intent);
+
                         } else {
-                            // If sign in fails, display a message to the user.
+
+                            // If sign in fails
                             Log.w("mytag", "createUserWithEmail:failure", task.getException());
                             Toast.makeText(Register.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-                            //updateUI(null);
+
                         }
 
-                        // ...
+
                     }
                 });
     }

@@ -1,6 +1,6 @@
 package com.example.mullechat_0_99;
 
-public class FriendlyMessage {
+public class Message {
 
     private String id;
     private String text;
@@ -8,10 +8,10 @@ public class FriendlyMessage {
     private String photoUrl;
     private String imageUrl;
 
-    public FriendlyMessage() {
+    public Message() {
     }
 
-    public FriendlyMessage(String text, String name, String photoUrl, String imageUrl) {
+    public Message(String text, String name, String photoUrl, String imageUrl) {
         this.text = text;
         this.name = name;
         this.photoUrl = photoUrl;
