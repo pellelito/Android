@@ -1,0 +1,2 @@
+rootProject.name='Uppgift4_SQLinAndroid'
+include ':app'
